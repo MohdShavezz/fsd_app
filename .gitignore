@@ -10,7 +10,6 @@ lerna-debug.log*
 frontend/node_modules
 frontend/dist
 backend/node_modules
-backend/config_url.js
 
 
 node_modules

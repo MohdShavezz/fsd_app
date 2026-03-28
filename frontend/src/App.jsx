@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { BASE_URL } from '../../backend/config_url.js'
 
 const App = () => {
 
@@ -9,7 +8,7 @@ const App = () => {
 
     async function fetchProds(){
         try {
-            const res=await fetch(`${BASE_URL}/products`)
+            const res=await fetch(`${import.meta.env.VITE_BASE_URL}/products`)
             const data=await res.json()
             setProducts(data)
         } catch (error) {
